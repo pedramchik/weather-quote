@@ -1,0 +1,119 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-size: 30px;
+    font-family: 'PT Sans', sans-serif;
+
+    font-weight: bold;
+}
+
+.cities {
+    box-sizing: border-box;
+    color: #000000;
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+img{
+    width: 200px;
+}
+
+.cities > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+a {
+    font-size: 15px;
+
+}
+
+/*a.button {*/
+/*-webkit-appearance: button;*/
+/*-moz-appearance: button;*/
+/*appearance: button;*/
+
+/*text-decoration: none;*/
+/*color: initial;*/
+/*}*/
+a.button {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    background: #000000;
+    padding: 8px 20px 10px 20px;
+    text-decoration: none;
+}
+
+a.button:hover {
+    background: #2eb9ff;
+    text-decoration: none;
+}
+
+.block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type=text] {
+    height: 30px;
+    outline: none;
+    border-radius: 10px;
+    border: 3px solid rgba(46, 185, 255, 0.25);
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 20px;
+}
+
+.qod-text:hover {
+    color: #2eb9ff;
+    cursor: pointer;
+}
+
+/*Iphone 6*/
+@media all and (min-width: 375px)
+and (max-width: 667px) {
+
+    #author a {
+        text-align: center;
+        font-size: 15px;
+        position: relative;
+    }
+
+    #text {
+        font-size: 20px;
+    }
+
+    a.button:hover {
+        background: #000;
+    }
+
+}
